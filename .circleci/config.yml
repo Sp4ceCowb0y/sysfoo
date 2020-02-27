@@ -20,4 +20,4 @@ jobs:
       
       - store_artifacts:
           path: target/sysfoo.war
-          destination: /tmp/artifacts/
+          destination: /tmp/artifacts/sysfoo.war
