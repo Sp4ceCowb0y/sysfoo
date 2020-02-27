@@ -28,7 +28,7 @@ jobs:
       
       - run: mvn integration-test
       - run: mvn package
-      - run: mv target/sysfoo.war /tmp/artifacts/sysfoo.war
+      - run: mv /home/circleci/webapp/target/sysfoo.war /tmp/artifacts/sysfoo.war
       
       - store_artifacts:
           path: /tmp/artifacts/sysfoo.war
