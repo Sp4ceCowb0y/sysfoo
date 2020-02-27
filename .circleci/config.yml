@@ -27,7 +27,7 @@ jobs:
           key: v1-dependencies-{{ checksum "pom.xml" }}
       
       - run: mvn package
-      - mv target/*.war /tmp/artifacts
+      - mv target/*.war /tmp/artifact-1
       
       - store_artifacts:
           path: /tmp/artifact-1
