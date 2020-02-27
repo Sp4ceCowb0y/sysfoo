@@ -26,7 +26,6 @@ jobs:
             - ~/.m2
           key: v1-dependencies-{{ checksum "pom.xml" }}
       
-      - run: mvn integration-test
       - run: mvn package
       - run: mv target/*.war /tmp/artifacts
       
