@@ -31,4 +31,4 @@ jobs:
       - run: mv target/*.war /tmp/artifacts
       
       - store_artifacts:
-          path: /tmp/artifacts/sysfoo.war
+          path: /tmp/artifacts
