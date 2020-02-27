@@ -28,7 +28,7 @@ jobs:
       
       - run: mvn integration-test
       - run: mvn package
-      - run: mv /target/*.war /tmp/artifacts/sysfoo.war
+      - run: mv target/*.war /tmp/artifacts/sysfoo.war
       
       - store_artifacts:
           path: /tmp/artifacts/sysfoo.war
