@@ -29,3 +29,6 @@ jobs:
       - run: mvn integration-test
       - run: mvn package
       - run: mv target/*.war /tmp/artifacts
+      
+      - store_artifacts:
+        path: /tmp/artifacts
