@@ -17,8 +17,7 @@ jobs:
        
       - run: mvn package
       - run: mkdir /tmp/artifacts
-      - run: mv target/sysfoo.war /tmp/artifacts/sysfoo.war
       
       - store_artifacts:
-          path: /tmp/artifacts
+          path: target/sysfoo.war
           destination: /tmp/artifacts/sysfoo.war
